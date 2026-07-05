@@ -3,87 +3,150 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Primebahis Contact</title>
+<title>Vegasslot Contact</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0b0f1a;
-        color: white;
-        overflow-x: hidden;
-    }
+:root{
+    --bg:#08111f;
+    --card:#121d30;
+    --gold:#ffbf33;
+    --gold2:#ff9800;
+    --text:#ffffff;
+    --muted:#bfc7d5;
+}
 
-    /* animated background */
-    .bg {
-        position: fixed;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(circle at 20% 20%, #ff00cc33, transparent 40%),
-                    radial-gradient(circle at 80% 30%, #00ffee22, transparent 40%),
-                    radial-gradient(circle at 50% 80%, #6600ff22, transparent 40%);
-        animation: move 12s linear infinite;
-        z-index: -1;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    @keyframes move {
-        0% { transform: translate(0,0); }
-        50% { transform: translate(-10%, -10%); }
-        100% { transform: translate(0,0); }
-    }
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(180deg,#08111f,#101b30,#08111f);
+    color:var(--text);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
 
-    .container {
-        text-align: center;
-        padding: 80px 20px;
-    }
+/* Arkaplan */
+.bg{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top,#ffb30033 0%,transparent 35%),
+    radial-gradient(circle at bottom,#ff8a0030 0%,transparent 30%),
+    radial-gradient(circle at center,#1b2f55 0%,transparent 60%);
+    animation:bgMove 12s ease-in-out infinite alternate;
+    z-index:-1;
+}
 
-    h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
-        background: linear-gradient(90deg, #ff00cc, #00ffee);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+@keyframes bgMove{
+    from{
+        transform:scale(1);
     }
-
-    p {
-        color: #aaa;
-        margin-bottom: 40px;
+    to{
+        transform:scale(1.15);
     }
+}
 
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        max-width: 300px;
-        margin: auto;
-    }
+.container{
+    width:90%;
+    max-width:420px;
+    background:rgba(18,29,48,.95);
+    border:2px solid rgba(255,191,51,.3);
+    border-radius:24px;
+    padding:45px 30px;
+    text-align:center;
+    box-shadow:
+    0 0 25px rgba(255,191,51,.15),
+    0 15px 40px rgba(0,0,0,.45);
+}
 
-    a.button {
-        text-decoration: none;
-        padding: 15px;
-        border-radius: 12px;
-        font-weight: bold;
-        color: white;
-        transition: 0.3s;
-        border: 1px solid #ffffff22;
-        backdrop-filter: blur(10px);
-    }
+h1{
+    font-size:42px;
+    font-weight:900;
+    letter-spacing:3px;
+    margin-bottom:12px;
+    color:var(--gold);
+    text-shadow:
+        0 0 10px rgba(255,191,51,.6),
+        0 0 25px rgba(255,152,0,.3);
+}
 
-    a.button:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px #00ffee55;
-    }
+p{
+    color:var(--muted);
+    margin-bottom:35px;
+}
 
-    .whatsapp { background: #25D36622; }
-    .telegram { background: #229ED922; }
-    .site { background: #ffffff11; }
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
 
-    footer {
-        margin-top: 60px;
-        font-size: 12px;
-        color: #666;
-    }
+.button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    height:58px;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:bold;
+    color:#fff;
+    transition:.3s;
+    border:1px solid rgba(255,191,51,.3);
+}
+
+/* Altın buton */
+.whatsapp,
+.telegram,
+.site{
+    background:linear-gradient(180deg,#ffc83d,#ff9800);
+    color:#1d1d1d;
+    box-shadow:0 6px 20px rgba(255,166,0,.35);
+}
+
+.whatsapp:hover,
+.telegram:hover,
+.site:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 30px rgba(255,166,0,.6);
+}
+
+footer{
+    margin-top:35px;
+    color:#8d99ac;
+    font-size:13px;
+}
+
+    .button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-decoration:none;
+    height:58px;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:bold;
+    color:#fff;
+    transition:.3s;
+    border:1px solid rgba(255,191,51,.3);
+}
+
+.button img{
+    width:24px;
+    height:24px;
+    object-fit:contain;
+}
+    
 </style>
+
 </head>
 
 <body>
@@ -91,21 +154,25 @@
 <div class="bg"></div>
 
 <div class="container">
-    <h1>PRIMEBAHIS</h1>
+    <h1>VEGASSLOT</h1>
+    <p>Atahan PreVIP Müşteri Temsilcisi</p>
     <p>Güncel iletişim ve site bağlantıları</p>
 
     <div class="buttons">
         <a class="button whatsapp" href="https://wa.me/995555392461" target="_blank">
-            📱 WhatsApp İletişim
-        </a>
+    <img src="whatsapp.png" alt="WhatsApp">
+    WhatsApp İletişim
+</a>
 
         <a class="button telegram" href="https://t.me/previpnisan" target="_blank">
-            ✈️ Telegram İletişim
-        </a>
+    <img src="telegram.webp" alt="Telegram">
+    Telegram İletişim
+</a>
 
-        <a class="button site" href="https://primebahis391" target="_blank">
-            🌐 Güncel Site
-        </a>
+        <a class="button site" href="https://primebahis391.com" target="_blank">
+    <img src="world.png" alt="Website">
+    Güncel Site
+</a>
     </div>
 
     <footer>
