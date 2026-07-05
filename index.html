@@ -5,14 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Primebahis Contact</title>
 
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+
 <style>
 :root{
-    --bg:#060b16;
-    --card:#111827;
-    --gold:#f6c64b;
-    --gold2:#d89b00;
+    --bg:#08111f;
+    --card:#121d30;
+    --gold:#ffbf33;
+    --gold2:#ff9800;
     --text:#ffffff;
-    --muted:#b5bfd2;
+    --muted:#bfc7d5;
 }
 
 *{
@@ -22,9 +25,8 @@
 }
 
 body{
-    font-family:'Segoe UI',Arial,sans-serif;
-    background:
-    linear-gradient(180deg,#050913 0%,#0d1527 50%,#050913 100%);
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(180deg,#08111f,#101b30,#08111f);
     color:var(--text);
     min-height:100vh;
     display:flex;
@@ -38,10 +40,10 @@ body{
     position:fixed;
     inset:0;
     background:
-    radial-gradient(circle at top,#f6c64b25 0%,transparent 30%),
-    radial-gradient(circle at bottom,#d89b0015 0%,transparent 40%),
-    radial-gradient(circle at center,#142340 0%,transparent 65%);
-    animation:bgMove 15s ease-in-out infinite alternate;
+    radial-gradient(circle at top,#ffb30033 0%,transparent 35%),
+    radial-gradient(circle at bottom,#ff8a0030 0%,transparent 30%),
+    radial-gradient(circle at center,#1b2f55 0%,transparent 60%);
+    animation:bgMove 12s ease-in-out infinite alternate;
     z-index:-1;
 }
 
@@ -50,71 +52,94 @@ body{
         transform:scale(1);
     }
     to{
-        transform:scale(1.12);
+        transform:scale(1.15);
     }
 }
 
 .container{
     width:90%;
-    max-width:430px;
-    background:rgba(17,24,39,.96);
-    border:1px solid rgba(246,198,75,.25);
-    border-radius:28px;
-    padding:50px 30px;
+    max-width:420px;
+    background:rgba(18,29,48,.95);
+    border:2px solid rgba(255,191,51,.3);
+    border-radius:24px;
+    padding:45px 30px;
     text-align:center;
-    backdrop-filter:blur(12px);
-
     box-shadow:
-    0 0 35px rgba(246,198,75,.08),
-    0 20px 60px rgba(0,0,0,.65);
+    0 0 25px rgba(255,191,51,.15),
+    0 15px 40px rgba(0,0,0,.45);
 }
 
 h1{
-    font-size:48px;
+    font-size:42px;
     font-weight:900;
-    letter-spacing:2px;
-    margin-bottom:18px;
-
-    background:linear-gradient(
-        180deg,
-        #fff9d6 0%,
-        #f6c64b 50%,
-        #d89b00 100%
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
+    letter-spacing:3px;
+    margin-bottom:12px;
+    color:var(--gold);
     text-shadow:
-        0 0 20px rgba(246,198,75,.3);
+        0 0 10px rgba(255,191,51,.6),
+        0 0 25px rgba(255,152,0,.3);
 }
 
 p{
     color:var(--muted);
-    margin-bottom:18px;
-    font-size:15px;
-    line-height:1.6;
+    margin-bottom:0px;
 }
 
 .buttons{
     display:flex;
     flex-direction:column;
     gap:18px;
-    margin-top:30px;
 }
 
 .button{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:12px;
     text-decoration:none;
-    height:60px;
-    border-radius:16px;
+    height:58px;
+    border-radius:14px;
     font-size:17px;
-    font-weight:700;
+    font-weight:bold;
+    color:#fff;
     transition:.3s;
-    border:1px solid rgba(246,198,75,.25);
+    border:1px solid rgba(255,191,51,.3);
+}
+
+/* Altın buton */
+.whatsapp,
+.telegram,
+.site{
+    background:linear-gradient(180deg,#ffc83d,#ff9800);
+    color:#1d1d1d;
+    box-shadow:0 6px 20px rgba(255,166,0,.35);
+}
+
+.whatsapp:hover,
+.telegram:hover,
+.site:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 30px rgba(255,166,0,.6);
+}
+
+footer{
+    margin-top:35px;
+    color:#8d99ac;
+    font-size:13px;
+}
+
+    .button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-decoration:none;
+    height:58px;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:bold;
+    color:#fff;
+    transition:.3s;
+    border:1px solid rgba(255,191,51,.3);
 }
 
 .button img{
@@ -123,38 +148,50 @@ p{
     object-fit:contain;
 }
 
-/* Premium altın butonlar */
-.whatsapp,
-.telegram,
-.site{
-    background:linear-gradient(
-        180deg,
-        #ffe28a 0%,
-        #f6c64b 50%,
-        #d89b00 100%
-    );
-
-    color:#111;
-
-    box-shadow:
-    0 8px 25px rgba(216,155,0,.35);
+    .button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
 }
 
-.whatsapp:hover,
-.telegram:hover,
-.site:hover{
-    transform:translateY(-5px);
-
-    box-shadow:
-    0 15px 35px rgba(216,155,0,.55);
+.button img{
+    width:24px;
+    height:24px;
+    object-fit:contain;
 }
 
-footer{
-    margin-top:35px;
-    color:#7f8ba1;
-    font-size:13px;
-    letter-spacing:1px;
+    .working-hours{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:20px 0;
+    padding:15px 20px;
+    background:#1d2740;
+    border:1px solid #d4a017;
+    border-radius:12px;
+    color:#fff;
 }
+
+.working-hours .icon{
+    font-size:26px;
+}
+
+.working-hours h3{
+    margin:0;
+    font-size:18px;
+    color:#ffbf2f;
+}
+
+.working-hours p{
+    margin:4px 0 0;
+    color:#ddd;
+    font-size:15px;
+}
+    
+
+.status-open{color:#4CAF50}.status-closed{color:#ff4d4d}
+
 </style>
 
 </head>
@@ -164,9 +201,12 @@ footer{
 <div class="bg"></div>
 
 <div class="container">
-    <h1>Primebahis</h1>
+   <img class="logo" src="logoprime.webp" alt="Primebahis Logo">
     <p>Nisan PreVIP Müşteri Temsilcisi</p>
-    <p>Güncel iletişim ve Site Bağlantıları</p>
+    <p>Güncel iletişim</p>
+
+    <div class="working-hours" id="hoursCard">
+<span class="icon" id="icon">🟢</span><div class="hours-text"><h3 id="status">Kontrol ediliyor...</h3><p>Her Gün <strong>11:00 - 20:00</strong></p><p id="message">⚡ Ortalama cevap süresi: 2-5 dakika</p><p id="clock"></p></div></div>
 
     <div class="buttons">
         <a class="button whatsapp" href="https://wa.me/995555392461" target="_blank">
@@ -179,16 +219,21 @@ footer{
     Telegram İletişim
 </a>
 
-        <a class="button site" href="https://primebahis391.com" target="_blank">
-    <img src="world.png" alt="Website">
-    Güncel Site
-</a>
-    </div>
-
     <footer>
         © Primebahis - Tüm hakları saklıdır
     </footer>
 </div>
 
+
+<script>
+function updateStatus(){
+ const now=new Date();
+ const parts=new Intl.DateTimeFormat('tr-TR',{timeZone:'Europe/Istanbul',hour:'2-digit',minute:'2-digit',hour12:false}).format(now).split(':');
+ const h=parseInt(parts[0]),m=parts.join(':');
+ clock.textContent='🇹🇷 Türkiye Saati: '+m;
+ if(h>=11&&h<20){status.textContent='Şu Anda Hizmet Veriyoruz';status.className='status-open';icon.textContent='🟢';message.textContent='⚡ Ortalama cevap süresi: 2-5 dakika';hoursCard.style.borderColor='#4CAF50';}
+ else {status.textContent='Şu Anda Mesai Dışındayız';status.className='status-closed';icon.textContent='🔴';message.textContent='📩 Mesajlarınız alınmıştır. 11:00 itibarıyla dönüş yapılacaktır.';hoursCard.style.borderColor='#ff4d4d';}}
+updateStatus();setInterval(updateStatus,60000);
+</script>
 </body>
 </html>
