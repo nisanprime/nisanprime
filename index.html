@@ -7,12 +7,12 @@
 
 <style>
 :root{
-    --bg:#08111f;
-    --card:#121d30;
-    --gold:#ffbf33;
-    --gold2:#ff9800;
+    --bg:#060b16;
+    --card:#111827;
+    --gold:#f6c64b;
+    --gold2:#d89b00;
     --text:#ffffff;
-    --muted:#bfc7d5;
+    --muted:#b5bfd2;
 }
 
 *{
@@ -22,8 +22,9 @@
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:linear-gradient(180deg,#08111f,#101b30,#08111f);
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:
+    linear-gradient(180deg,#050913 0%,#0d1527 50%,#050913 100%);
     color:var(--text);
     min-height:100vh;
     display:flex;
@@ -37,10 +38,10 @@ body{
     position:fixed;
     inset:0;
     background:
-    radial-gradient(circle at top,#ffb30033 0%,transparent 35%),
-    radial-gradient(circle at bottom,#ff8a0030 0%,transparent 30%),
-    radial-gradient(circle at center,#1b2f55 0%,transparent 60%);
-    animation:bgMove 12s ease-in-out infinite alternate;
+    radial-gradient(circle at top,#f6c64b25 0%,transparent 30%),
+    radial-gradient(circle at bottom,#d89b0015 0%,transparent 40%),
+    radial-gradient(circle at center,#142340 0%,transparent 65%);
+    animation:bgMove 15s ease-in-out infinite alternate;
     z-index:-1;
 }
 
@@ -49,94 +50,71 @@ body{
         transform:scale(1);
     }
     to{
-        transform:scale(1.15);
+        transform:scale(1.12);
     }
 }
 
 .container{
     width:90%;
-    max-width:420px;
-    background:rgba(18,29,48,.95);
-    border:2px solid rgba(255,191,51,.3);
-    border-radius:24px;
-    padding:45px 30px;
+    max-width:430px;
+    background:rgba(17,24,39,.96);
+    border:1px solid rgba(246,198,75,.25);
+    border-radius:28px;
+    padding:50px 30px;
     text-align:center;
+    backdrop-filter:blur(12px);
+
     box-shadow:
-    0 0 25px rgba(255,191,51,.15),
-    0 15px 40px rgba(0,0,0,.45);
+    0 0 35px rgba(246,198,75,.08),
+    0 20px 60px rgba(0,0,0,.65);
 }
 
 h1{
-    font-size:42px;
+    font-size:48px;
     font-weight:900;
-    letter-spacing:3px;
-    margin-bottom:12px;
-    color:var(--gold);
+    letter-spacing:2px;
+    margin-bottom:18px;
+
+    background:linear-gradient(
+        180deg,
+        #fff9d6 0%,
+        #f6c64b 50%,
+        #d89b00 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
     text-shadow:
-        0 0 10px rgba(255,191,51,.6),
-        0 0 25px rgba(255,152,0,.3);
+        0 0 20px rgba(246,198,75,.3);
 }
 
 p{
     color:var(--muted);
-    margin-bottom:35px;
+    margin-bottom:18px;
+    font-size:15px;
+    line-height:1.6;
 }
 
 .buttons{
     display:flex;
     flex-direction:column;
     gap:18px;
+    margin-top:30px;
 }
 
 .button{
     display:flex;
     align-items:center;
     justify-content:center;
+    gap:12px;
     text-decoration:none;
-    height:58px;
-    border-radius:14px;
+    height:60px;
+    border-radius:16px;
     font-size:17px;
-    font-weight:bold;
-    color:#fff;
+    font-weight:700;
     transition:.3s;
-    border:1px solid rgba(255,191,51,.3);
-}
-
-/* Altın buton */
-.whatsapp,
-.telegram,
-.site{
-    background:linear-gradient(180deg,#ffc83d,#ff9800);
-    color:#1d1d1d;
-    box-shadow:0 6px 20px rgba(255,166,0,.35);
-}
-
-.whatsapp:hover,
-.telegram:hover,
-.site:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 30px rgba(255,166,0,.6);
-}
-
-footer{
-    margin-top:35px;
-    color:#8d99ac;
-    font-size:13px;
-}
-
-    .button{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    text-decoration:none;
-    height:58px;
-    border-radius:14px;
-    font-size:17px;
-    font-weight:bold;
-    color:#fff;
-    transition:.3s;
-    border:1px solid rgba(255,191,51,.3);
+    border:1px solid rgba(246,198,75,.25);
 }
 
 .button img{
@@ -144,7 +122,39 @@ footer{
     height:24px;
     object-fit:contain;
 }
-    
+
+/* Premium altın butonlar */
+.whatsapp,
+.telegram,
+.site{
+    background:linear-gradient(
+        180deg,
+        #ffe28a 0%,
+        #f6c64b 50%,
+        #d89b00 100%
+    );
+
+    color:#111;
+
+    box-shadow:
+    0 8px 25px rgba(216,155,0,.35);
+}
+
+.whatsapp:hover,
+.telegram:hover,
+.site:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 15px 35px rgba(216,155,0,.55);
+}
+
+footer{
+    margin-top:35px;
+    color:#7f8ba1;
+    font-size:13px;
+    letter-spacing:1px;
+}
 </style>
 
 </head>
@@ -156,7 +166,7 @@ footer{
 <div class="container">
     <h1>Primebahis</h1>
     <p>Nisan PreVIP Müşteri Temsilcisi</p>
-    <p>Güncel iletişim ve site bağlantıları</p>
+    <p>Güncel iletişim ve Site Bağlantıları</p>
 
     <div class="buttons">
         <a class="button whatsapp" href="https://wa.me/995555392461" target="_blank">
